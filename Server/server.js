@@ -12,6 +12,11 @@ var mongoDatabase = 'mongodb://localhost:27017/employeeDetails';
 const app = express();
 mongoose.Promise = global.Promise;
 
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useFindAndModify", false);
+mongoose.set("useCreateIndex", true);
+mongoose.set("useUnifiedTopology", true);
+
 // Connect Mongodb Database
 mongoose.connect(mongoDatabase, { useNewUrlParser: true }).then(
     () => { console.log('Database is connected') },
