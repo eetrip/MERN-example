@@ -12,6 +12,7 @@ var mongoDatabase = 'mongodb://localhost:27017/employeeDetails';
 const app = express();
 mongoose.Promise = global.Promise;
 
+// new branch
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
