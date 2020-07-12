@@ -8,3 +8,6 @@ npm run dev-server
 
 then to start react app run command :-
 npm start
+
+to run both simultaneously run command :-
+npm run dev-unix
